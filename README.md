@@ -4,7 +4,7 @@ A small Node.js website for practicing deployment to **Azure App Service**. It i
 
 ## Run locally
 
-Install Node.js 24 LTS, open a terminal in this folder, and run:
+Install Node.js 22 LTS, open a terminal in this folder, and run:
 
 ```sh
 npm start
@@ -20,7 +20,7 @@ This walkthrough uses GitHub as the source and the Azure portal to configure dep
 2. Open https://portal.azure.com and search for **App Services**. Select **Create > Web App**.
 3. On the Basics tab, select your subscription and create a resource group such as `rg-webapp-practice`.
 4. Enter a globally unique app name, such as `shiva-practice-12345`.
-5. Set **Publish** to **Code**, **Runtime stack** to **Node 24 LTS**, and **Operating System** to **Linux**. If Node 24 is unavailable in your region, choose a newer supported Node LTS runtime.
+5. Set **Publish** to **Code**, **Runtime stack** to **Node 22 LTS**, and **Operating System** to **Linux**. The runtime should match the `22.x` version declared in `package.json`.
 6. Choose a region and an App Service plan. Select **Free F1** if available for your configuration. Other tiers can incur charges; check the displayed price before creating the app.
 7. Select **Review + create**, then **Create**. When provisioning finishes, select **Go to resource**.
 8. Open **Deployment Center** in the app's menu. Set the source to **GitHub**, authorize access, and select your repository and branch (usually `main`). Choose **GitHub Actions** as the build provider if prompted. Follow the authentication prompts and select **Save**. Azure generates a deployment workflow in your repository.
@@ -35,6 +35,7 @@ Edit the heading in `public/index.html` on GitHub and commit to the connected br
 
 ## Troubleshooting
 
+- **Couldn't detect a version for platform nodejs:** Confirm the deployment uses the latest `main` branch, the source directory is the repository root (not `public`), and the runtime is Node 22 LTS. This app declares `engines.node` as `22.x`. If QuickDeploy still fails, use the Deployment Center GitHub Actions flow above and check the full build log for supported Node versions.
 - **Deployment fails:** Open the failed run in GitHub Actions and inspect the failed step. Ensure the app files are at the repository root.
 - **Application error:** Check **Monitoring > Log stream** in Azure. Enable application logging if prompted. Confirm the Node runtime and startup command match the settings above.
 - **Old page appears:** Wait for the latest workflow to finish, then refresh your browser.
