@@ -1,6 +1,6 @@
 # My first Azure web app
 
-A small Node.js website for practicing deployment to **Azure App Service**. It includes a welcome page, an interactive button, and a `/health` endpoint. No database, secrets, or external packages are required.
+A small Node.js website for practicing deployment to **Azure App Service**. Its Little Love interface includes love notes, date ideas, animated hearts, and three color themes. Themes are remembered in your browser. The `/health` endpoint remains available for deployment checks. No database, secrets, or external packages are required.
 
 ## Run locally
 
