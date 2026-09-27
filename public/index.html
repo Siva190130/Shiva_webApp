@@ -1,8 +1,8 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fff5f3">
-<title>Little Love — A little more us</title>
+<title>For you — A heartfelt sorry</title>
 <style>
 :root{--paper:#fff5f3;--ink:#442c39;--muted:#80636f;--accent:#b43e63;--light:#f9dce4;--line:#ebd6dc}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,sans-serif;transition:background .4s,color .4s}body[data-theme=lavender]{--paper:#f5f1ff;--ink:#392e51;--muted:#716485;--accent:#7652a4;--light:#e8ddf9;--line:#ddd2ec}body[data-theme=peach]{--paper:#fff5e9;--ink:#53352c;--muted:#80665b;--accent:#a94c32;--light:#f9dfc8;--line:#ebd7c4}
@@ -12,63 +12,81 @@ button{font:inherit;cursor:pointer;transition:transform .2s}button:hover{transfo
 .section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:20px 0 23px}h2{font:normal 29px Georgia,serif;margin:0}.section-heading p{font-size:12px;color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#ffffff70;border:1px solid var(--line);border-radius:18px;padding:25px;display:flex;flex-direction:column;align-items:start;min-height:295px}.icon{width:42px;height:42px;border-radius:13px;background:var(--light);color:var(--accent);display:grid;place-items:center;font-size:22px}.label{color:var(--muted);margin:23px 0 10px;font-size:9px}h3{font:normal 23px Georgia,serif;margin:0}.card p{color:var(--muted);font-size:13px;line-height:1.7;margin:12px 0 21px}.text-button{margin-top:auto;border:0;border-bottom:1px solid var(--line);color:var(--accent);background:transparent;padding:0 0 7px;font-size:12px;font-weight:bold}.themes{display:flex;gap:12px;margin-top:auto}.swatch{width:34px;height:34px;border-radius:50%;border:3px solid var(--paper);outline:1px solid var(--line)}.swatch[aria-pressed=true]{outline:2px solid var(--accent)}.rose{background:#df9fb4}.lavender{background:#b5a0d9}.peach{background:#edb189}.closing{margin:48px 0 32px;text-align:center;color:var(--muted);font:italic 18px Georgia,serif}footer{display:flex;justify-content:space-between;gap:16px;padding:22px 0 27px;border-top:1px solid var(--line);color:var(--muted);font-size:10px;letter-spacing:.5px}footer span:last-child{color:var(--accent)}
 dialog{border:1px solid var(--line);border-radius:22px;background:var(--paper);color:var(--ink);width:min(440px,calc(100% - 32px));padding:38px;text-align:center;box-shadow:0 30px 100px #442c3925}dialog::backdrop{background:#30202b66;backdrop-filter:blur(5px)}.close{position:absolute;right:15px;top:10px;font-size:26px;color:var(--muted);background:transparent;border:0}.modal-heart{font-size:42px;color:var(--accent);margin-bottom:18px}dialog p{color:var(--muted);line-height:1.8;font-size:15px;margin:22px 0}.burst{position:fixed;left:var(--x);top:var(--y);pointer-events:none;color:var(--accent);font-size:24px;z-index:10;animation:burst 1.5s ease-out forwards}@keyframes float{50%{translate:0 -12px}}@keyframes burst{to{translate:var(--dx) -170px;opacity:0;rotate:25deg}}
 @media(max-width:900px){.hero{gap:20px}h1{font-size:64px}.art{scale:.85}.card{padding:20px}.header-note{letter-spacing:1px;font-size:9px}}@media(max-width:650px){.wrap{width:calc(100% - 36px)}header{padding:22px 0}.header-note{max-width:100px;text-align:right;line-height:1.6}.hero{grid-template-columns:1fr;gap:0;padding:45px 0 16px}h1{font-size:clamp(48px,10vw,66px);letter-spacing:-2px}.art{min-height:340px;scale:.8;margin:15px 0 -10px}.section-heading{display:block}.section-heading p{margin-top:10px}.cards{grid-template-columns:1fr}.card{min-height:245px;padding:25px}footer{font-size:9px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+html{scroll-behavior:smooth}.intro{max-width:430px}.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:22px}.quiet-link{font-size:13px;color:var(--accent);text-underline-offset:5px;margin-top:18px}.letter p{font-size:21px}.apology-strip{border-block:1px solid var(--line);padding:27px 10px;text-align:center;font:italic 23px/1.5 Georgia,serif;color:var(--accent)}.invitation{margin:65px 0;display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:#ffffff80;scroll-margin-top:25px}.fort-art{min-height:420px;background:#f5dacd;position:relative;overflow:hidden}.fort-art svg{width:100%;height:100%;position:absolute;inset:0}.scene-caption{position:absolute;left:28px;bottom:27px;color:#fff5e8;z-index:1}.scene-caption span{font-size:10px;letter-spacing:3px;text-transform:uppercase}.scene-caption p{font:italic 32px Georgia,serif;margin:10px 0}.invite-content{padding:40px}.invite-content h2{font-size:38px;line-height:1.15;margin:18px 0}.invite-content>p{font-size:14px;line-height:1.8;color:var(--muted)}.details{display:flex;flex-wrap:wrap;gap:10px;margin:23px 0}.pill{border:1px solid var(--line);border-radius:30px;padding:9px 12px;font-size:11px;color:var(--muted)}.reply-options{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.reply-button{border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:12px 15px;border-radius:24px;font-size:12px}.reply-button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:white}.reply-panel{margin-top:20px;border-top:1px solid var(--line);padding-top:20px}.reply-panel[hidden]{display:none}.reply-panel p{font-size:13px;line-height:1.7;color:var(--muted)}.reply-panel textarea{width:100%;resize:vertical;min-height:95px;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);font:13px/1.6 Arial,sans-serif}.reply-panel label{display:block;font-size:12px;margin:15px 0 8px}.reply-panel .text-button{margin-top:15px}.logistics{font-size:11px!important}.quote-section{text-align:center;max-width:780px;margin:65px auto}.quote-mark{color:var(--accent);font:70px Georgia,serif;line-height:1}.quote-section blockquote{font:italic clamp(25px,4vw,36px)/1.45 Georgia,serif;margin:0 0 22px;min-height:110px}.promise-card{min-height:230px}.promise-card .label{margin-top:0}.closing{line-height:1.7}dialog{width:min(580px,calc(100% - 32px));max-height:85dvh;overflow:auto;text-align:left;padding:38px}dialog .modal-heart{text-align:center}dialog h2{text-align:center;font-size:34px}dialog p{font-size:14px;margin:18px 0}.signature{font:italic 23px Georgia,serif!important;color:var(--accent)!important}.modal-footer{display:flex;justify-content:center}.fort-art:after{content:'';position:absolute;inset:65% 0 0;background:linear-gradient(transparent,#51352c80)}.theme-footer{display:flex;align-items:center;gap:12px;margin:30px auto;justify-content:center}.theme-footer .swatch{width:27px;height:27px}.theme-footer span{font-size:11px;color:var(--muted)}
+@media(max-width:900px){.invite-content{padding:28px}.invitation{grid-template-columns:.9fr 1.1fr}.hero{gap:5px}}@media(max-width:650px){.invitation{grid-template-columns:1fr;margin:40px 0}.fort-art{min-height:280px}.invite-content{padding:26px}.invite-content h2{font-size:34px}.apology-strip{font-size:20px}.quote-section{margin:45px auto}.quote-section blockquote{min-height:160px}.hero{padding-bottom:35px}.promise-card{min-height:190px}.art{margin-inline:-10px}.eyebrow{font-size:9px;letter-spacing:1.6px}dialog{padding:32px 24px}.scene-caption p{font-size:28px}}@media(max-width:650px){.orbit{width:280px;height:240px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style></head>
 <body data-theme="rose"><div class="wrap">
-<header><a class="brand" href="/" aria-label="Little Love home"><span aria-hidden="true">♡</span> little love</a><span class="header-note">For the moments that matter</span></header>
-<main><section class="hero" aria-labelledby="hero-title"><div><div class="eyebrow">A small space for big feelings</div><h1 id="hero-title">A little love.<br>A little magic.<br><em>A little more us.</em></h1><p class="intro">Slow down, smile a little, and make an ordinary day feel special. There’s something sweet waiting for you.</p><button class="primary" id="open-letter" type="button">Open a little love note <span aria-hidden="true">↗</span></button><p class="tiny">Sealed with a smile. Open whenever you need one.</p></div>
-<div class="art" aria-hidden="true"><div class="halo"></div><div class="orbit"></div><span class="floating f1">♥</span><span class="floating f2">♡</span><span class="floating f3">✧</span><div class="envelope"><div class="letter"><span class="heart">♡</span><p>You make the<br>ordinary, lovely.</p></div><div class="fold"></div><div class="seal">♥</div></div><span class="art-caption">a little something, just for you ↗</span></div></section>
-<section aria-labelledby="moments-title"><div class="section-heading"><h2 id="moments-title">Make a little moment</h2><p>Nothing grand. Just something lovely.</p></div><div class="cards">
-<article class="card"><div class="icon" aria-hidden="true">✧</div><div class="label">01 / A little adventure</div><h3>It’s a date</h3><p>Can’t decide what to do together? Let a little serendipity choose for you.</p><button class="text-button" id="date" type="button">Find our next date ↗</button></article>
-<article class="card"><div class="icon" aria-hidden="true">♡</div><div class="label">02 / Just because</div><h3>Send a little love</h3><p id="love-status" role="status">Some days call for a little extra love. Fill this corner of the world with hearts.</p><button class="text-button" id="love" type="button">A heart for you +</button></article>
-<article class="card"><div class="icon" aria-hidden="true">❀</div><div class="label">03 / Set the feeling</div><h3>Pick your daydream</h3><p id="theme-status" role="status">Currently blushing in Rose. Choose a color that feels like you.</p><div class="themes" aria-label="Color theme"><button type="button" class="swatch rose" data-color="rose" aria-label="Rose theme" aria-pressed="true"></button><button type="button" class="swatch lavender" data-color="lavender" aria-label="Lavender theme" aria-pressed="false"></button><button type="button" class="swatch peach" data-color="peach" aria-label="Peach theme" aria-pressed="false"></button></div></article>
-</div></section><p class="closing">“The best things in life aren’t things. They’re moments.”</p></main>
-<footer><span>A little corner of the internet, made with love.</span><span>Stay soft. Stay lovely. ♡</span></footer></div>
-<dialog id="moment" aria-labelledby="moment-title" aria-describedby="moment-text"><button class="close" id="close" type="button" aria-label="Close dialog">×</button><div class="modal-heart" aria-hidden="true">♡</div><h2 id="moment-title"></h2><p id="moment-text" aria-live="polite"></p><button class="primary" id="another" type="button">One more, please</button></dialog>
+<header><a class="brand" href="/" aria-label="For you, home"><span aria-hidden="true">♡</span> for you, always</a><span class="header-note">A little courage. A lot of love.</span></header>
+<main><section class="hero" aria-labelledby="hero-title"><div><div class="eyebrow">From my heart, without excuses</div><h1 id="hero-title">I should have<br>stayed.<br><em>I’m sorry, love.</em></h1><p class="intro">You came looking for me, and I had already left. I’m sorry I let my impatience hurt you. You deserved a conversation, and I want to start by listening.</p><div class="hero-actions"><button class="primary" id="open-letter" type="button">A letter from my heart <span aria-hidden="true">↗</span></button><a class="quiet-link" href="#invitation">An invitation for this evening</a></div><p class="tiny">Read this in your own time. You don’t owe me an answer right now.</p></div>
+<div class="art" aria-hidden="true"><div class="halo"></div><div class="orbit"></div><span class="floating f1">♥</span><span class="floating f2">♡</span><span class="floating f3">✧</span><div class="envelope"><div class="letter"><span class="heart">♡</span><p>A little less pride.<br>A lot more patience.</p></div><div class="fold"></div><div class="seal">♥</div></div><span class="art-caption">the words I should have said ↗</span></div></section>
+<div class="apology-strip">“You deserved a little more patience from the person who loves you.”</div>
+<section class="invitation" id="invitation" aria-labelledby="invite-title"><div class="fort-art">
+<svg viewBox="0 0 560 520" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a hilltop fort under a peach evening sky"><defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#edb9b3"/><stop offset="1" stop-color="#ffe6bd"/></linearGradient><linearGradient id="hill" x2="0" y2="1"><stop stop-color="#b57c6e"/><stop offset="1" stop-color="#73544e"/></linearGradient></defs><path fill="url(#sky)" d="M0 0h560v520H0z"/><circle cx="385" cy="145" r="66" fill="#fff2cb"/><circle cx="385" cy="145" r="84" fill="#fff2cb" opacity=".15"/><path d="M0 325Q130 207 260 307T560 280V520H0" fill="#d5a293"/><path d="M0 405L70 352 135 340 213 244 290 265 340 226 414 300 475 325 560 396V520H0" fill="url(#hill)"/><g fill="#86574d"><path d="M180 260v-67h15v-15h16v15h20v-15h16v15h18v67zM300 257v-79h14v-16h17v16h18v-16h17v16h15v95z"/><path d="M220 219h94v60h-94zM154 289v-35h20v-12h16v12h20v-12h16v12h20v35z"/></g><g fill="#563f3b"><path d="M275 272v-23a12 12 0 0 0-24 0v23zM205 235v-19a7 7 0 0 1 14 0v19zM328 224v-19a7 7 0 0 1 14 0v19z"/></g><path d="M252 278l-17 30 30 8-13 24 33 10-20 24 35 10-17 27" fill="none" stroke="#d6ad91" stroke-width="8"/><path d="M0 460q90-68 180-5t200-13 180 4v74H0" fill="#674c46"/><g fill="none" stroke="#a5766c" stroke-width="2" stroke-linecap="round"><path d="M94 122q8-8 16 0 8-8 16 0M152 92q6-6 12 0 6-6 12 0M442 241q7-7 14 0 7-7 14 0"/></g></svg>
+<div class="scene-caption"><span>Hyderabad · An evening together</span><p>Old walls. A gentler beginning.</p></div></div>
+<div class="invite-content"><div class="eyebrow">If you feel up to it</div><h2 id="invite-title">Golconda Fort.<br>This evening.<br><em>You and me?</em></h2><p>I’d love to take a walk with you, hear how yesterday felt for you, and spend a little unhurried time together. We don’t have to fix everything in one evening.</p><div class="details"><span class="pill">♡ Today evening</span><span class="pill">◷ A time we both choose</span></div><p>Would you like to come? Another day is okay too. If you need space, I’ll respect that.</p>
+<div class="reply-options" role="group" aria-label="How would you like to reply?"><button class="reply-button" data-reply="yes" aria-pressed="false" type="button">Let’s go together ♡</button><button class="reply-button" data-reply="later" aria-pressed="false" type="button">Another day</button><button class="reply-button" data-reply="space" aria-pressed="false" type="button">I need some space</button></div>
+<div class="reply-panel" id="reply-panel" hidden><p id="reply-message" role="status"></p><label for="reply-text">Your reply — change any words you like</label><textarea id="reply-text"></textarea><button class="text-button" id="copy-reply" type="button">Copy my reply</button><p id="copy-status" role="status">Nothing is sent automatically. Copy your reply and send it in our chat when you’re ready.</p></div>
+<p class="logistics">We’ll confirm a time and check today’s visiting hours and last entry before setting out.</p><a class="quiet-link" href="https://www.google.com/maps/search/?api=1&amp;query=Golconda+Fort+Hyderabad" target="_blank" rel="noopener noreferrer">Find Golconda Fort on the map ↗</a></div></section>
+<section class="quote-section" aria-label="Little thoughts, from my heart"><div class="quote-mark" aria-hidden="true">“</div><blockquote id="quote" aria-live="polite">Loving you should look like patience, especially in the moments when patience is hardest.</blockquote><button class="text-button" id="next-quote" type="button">One more little thought ♡</button></section>
+<section aria-labelledby="promises-title"><div class="section-heading"><h2 id="promises-title">More than a pretty apology</h2><p>The little things I want to do better.</p></div><div class="cards">
+<article class="card promise-card"><div class="label">01 / Patience</div><h3>Pause before I react.</h3><p>A few minutes should never matter more than how I make you feel. I want to choose kindness in that pause.</p></article>
+<article class="card promise-card"><div class="label">02 / Communication</div><h3>Talk instead of leaving.</h3><p>If plans change or I feel upset, I’ll call or message and talk it through, instead of leaving you wondering.</p></article>
+<article class="card promise-card"><div class="label">03 / Listening</div><h3>Make room for your feelings.</h3><p>I want to understand what hurt you. You can tell me honestly, without having to make it easier for me to hear.</p></article></div></section>
+<p class="closing">I can’t undo yesterday.<br>But I can show up with more care today. ♡</p>
+<div class="theme-footer"><span>A softer shade of love</span><div class="themes" aria-label="Color theme"><button type="button" class="swatch rose" data-color="rose" aria-label="Rose theme" aria-pressed="true"></button><button type="button" class="swatch lavender" data-color="lavender" aria-label="Lavender theme" aria-pressed="false"></button><button type="button" class="swatch peach" data-color="peach" aria-label="Peach theme" aria-pressed="false"></button></div></div>
+</main><footer><span>For you. With love, and a little more courage.</span><span>One conversation at a time. ♡</span></footer></div>
+<dialog id="moment" aria-labelledby="moment-title"><button class="close" id="close" type="button" aria-label="Close letter">×</button><div class="modal-heart" aria-hidden="true">♡</div><h2 id="moment-title">I owe you a real sorry.</h2><p>My love,</p><p>Yesterday, I came to see you and left before we could meet. You arrived a few minutes later and looked for me, but I was already gone. I’m sorry. I should have waited, or called and spoken to you before leaving.</p><p>My impatience was mine to handle. It wasn’t fair to make you feel its consequences. I understand why you’re angry, and I don’t want to brush that aside with a pretty message.</p><p>You matter to me. So do your time, your effort, and your feelings. I want to hear your side and do better in the small, everyday ways that actually count.</p><p>If you’d like to meet at Golconda Fort this evening, I’d love that. If you’re not ready, I’ll give you time. My apology doesn’t depend on you saying yes.</p><p class="signature">With love, and a promise to be more patient. ♡</p><div class="modal-footer"><button class="primary" id="letter-done" type="button">Keep this little thought with you ♡</button></div></dialog>
 <script>
-const notes = ['You make the ordinary, lovely. Here’s to more slow mornings, shared smiles, and little moments with you.', 'If today feels a little heavy, let this be a reminder: you deserve gentleness, joy, and a really good hug.', 'Of all the places we could be, my favorite is right here, making memories with you.', 'You don’t have to do anything extraordinary to be someone’s favorite part of the day.', 'Some love stories are written in grand gestures. Ours can be written in cups of tea and “text me when you get home.”'];
-const dates = ['The sunset club: pack your favorite snacks, find a quiet spot, and watch the sky change colors. Phones away, just for a little while.', 'Your own tiny café: make drinks for each other, put on a favorite playlist, and ask three questions you’ve never asked before.', 'The coin-flip walk: at each safe crossing, flip a coin to choose your direction. Find a lovely new corner of your neighborhood.', 'A kitchen adventure: pick a recipe neither of you has tried. The only rule? The mess is part of the memory.', 'A living-room picnic: a blanket, something delicious, and a movie you both loved growing up. Cozy counts as a destination.'];
 const modal = document.getElementById('moment');
-let mode = 'note';
-const previous = { note: -1, date: -1 };
-function showMoment(nextMode) {
-  mode = nextMode;
-  const choices = mode === 'note' ? notes : dates;
-  const index = (previous[mode] + 1 + Math.floor(Math.random() * (choices.length - 1))) % choices.length;
-  previous[mode] = index;
-  document.getElementById('moment-title').textContent = mode === 'note' ? 'A note, just for you' : 'Your next little adventure';
-  document.getElementById('moment-text').textContent = choices[index];
-  if (!modal.open) modal.showModal();
-}
-document.getElementById('open-letter').addEventListener('click', () => showMoment('note'));
-document.getElementById('date').addEventListener('click', () => showMoment('date'));
-document.getElementById('another').addEventListener('click', () => showMoment(mode));
+document.getElementById('open-letter').addEventListener('click', () => modal.showModal());
 document.getElementById('close').addEventListener('click', () => modal.close());
+document.getElementById('letter-done').addEventListener('click', () => modal.close());
 modal.addEventListener('click', event => {
   if (event.target !== modal) return;
   const box = modal.getBoundingClientRect();
   if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) modal.close();
 });
-let hearts = 0;
-document.getElementById('love').addEventListener('click', event => {
-  hearts += 1;
-  document.getElementById('love-status').textContent = `${hearts} little ${hearts === 1 ? 'heart' : 'hearts'} added to your day. There’s always room for a little more love.`;
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const box = event.currentTarget.getBoundingClientRect();
-  for (let i = 0; i < 8 && document.querySelectorAll('.burst').length < 64; i++) {
-    const heart = document.createElement('span');
-    heart.className = 'burst'; heart.textContent = '♥'; heart.setAttribute('aria-hidden', 'true');
-    heart.style.setProperty('--x', `${box.left + box.width / 2}px`);
-    heart.style.setProperty('--y', `${box.top}px`);
-    heart.style.setProperty('--dx', `${Math.random() * 220 - 110}px`);
-    document.body.appendChild(heart);
-    setTimeout(() => heart.remove(), 1600);
+const quotes = [
+  'Loving you should look like patience, especially in the moments when patience is hardest.',
+  'If I could rewrite yesterday, I would stay. For today, I want to listen.',
+  'You are not a moment to hurry through. You are someone I want to make time for.',
+  'Let the fort keep its walls. I want to meet you with an open heart.',
+  'The sweetest part of an evening is not the sky. It is the person beside me, feeling heard.',
+  'A beautiful sorry begins with words, and becomes real in the way I treat you afterward.'
+];
+let quoteIndex = 0;
+document.getElementById('next-quote').addEventListener('click', () => {
+  quoteIndex = (quoteIndex + 1) % quotes.length;
+  document.getElementById('quote').textContent = quotes[quoteIndex];
+});
+const replies = {
+  yes: { message: 'A little walk, a real conversation. Let’s choose a time together.', text: 'I’d like to go to Golconda Fort with you this evening. Let’s confirm the time and visiting hours first.' },
+  later: { message: 'Another day is completely okay. There’s no deadline for this conversation.', text: 'I’m not ready to meet this evening. Can we plan for another day?' },
+  space: { message: 'Take the time you need. You don’t need to explain more than you want to.', text: 'I need some space right now. Please give me time; I’ll reach out when I’m ready.' }
+};
+const replyText = document.getElementById('reply-text');
+const copyStatus = document.getElementById('copy-status');
+document.querySelectorAll('[data-reply]').forEach(button => button.addEventListener('click', () => {
+  document.querySelectorAll('[data-reply]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
+  const reply = replies[button.dataset.reply];
+  document.getElementById('reply-panel').hidden = false;
+  document.getElementById('reply-message').textContent = reply.message;
+  replyText.value = reply.text;
+  copyStatus.textContent = 'Nothing is sent automatically. Copy your reply and send it in our chat when you’re ready.';
+}));
+document.getElementById('copy-reply').addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(replyText.value);
+    copyStatus.textContent = 'Copied. You can paste it into our chat whenever you’re ready. It has not been sent.';
+  } catch {
+    replyText.focus(); replyText.select();
+    copyStatus.textContent = 'Select and copy the reply above, then paste it into our chat when you’re ready.';
   }
 });
 function applyTheme(theme) {
   if (!['rose', 'lavender', 'peach'].includes(theme)) return;
   document.body.dataset.theme = theme;
   document.querySelectorAll('[data-color]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.color === theme)));
-  document.getElementById('theme-status').textContent = `Currently dreaming in ${theme[0].toUpperCase() + theme.slice(1)}. Choose a color that feels like you.`;
   document.querySelector('meta[name="theme-color"]').content = { rose:'#fff5f3', lavender:'#f5f1ff', peach:'#fff5e9' }[theme];
 }
 document.querySelectorAll('[data-color]').forEach(button => button.addEventListener('click', () => {

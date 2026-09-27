@@ -1,6 +1,8 @@
 # My first Azure web app
 
-A small Node.js website for practicing deployment to **Azure App Service**. Its Little Love interface includes love notes, date ideas, animated hearts, and three color themes. Themes are remembered in your browser. The `/health` endpoint remains available for deployment checks. No database, secrets, or external packages are required.
+A small Node.js website for practicing deployment to **Azure App Service**. Its personal apology page includes a letter, original love quotes, an illustrated invitation to Golconda Fort this evening, and three color themes. Reply choices create editable text to copy into a chat; the website does not send or collect responses. Themes are remembered in your browser. The `/health` endpoint remains available for deployment checks. No database, secrets, or external packages are required.
+
+The invitation uses “this evening” and the letter references “yesterday.” Update that wording in `public/index.html` if sharing it on a different day. Confirm visiting hours and a meeting time separately.
 
 ## Run locally
 
